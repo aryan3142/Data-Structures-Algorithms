@@ -17,12 +17,10 @@ public:
     def bfs(int S);
 
 };
-
 graph::graph(int V){
     this->V = V;
     adj = new list<int>[V];
 }
-
 void addege(int s,int w){
     
     adj[u].push_back(w);
@@ -52,16 +50,7 @@ void bfs(int S){
         for( i == adj[a].begin(); i != adj[a].end; ++i)
             if(!visited[*i])
                 visited[*i] = true;
-                queue.pushback(*i);
-        
-    }
-    
-    
-    
-}
-
-    
-    
-    
-    
+                queue.pushback(*i);      
+    }       
+  }      
 }
